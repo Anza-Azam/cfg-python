@@ -17,4 +17,4 @@
 
 print('"I hope it" is sunny this weekend')
 print('I hope it is sunny')
-print('hello world')
+print("cat "+"videos".title())
