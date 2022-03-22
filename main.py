@@ -15,6 +15,5 @@
 #
 # # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
-print('"I hope it" is sunny this weekend')
-print('I hope it is sunny')
-print("cat "+"videos".title())
+food = 'spaghetti'
+print(food)
