@@ -15,4 +15,6 @@
 #
 # # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
-print('I hope it is sunny this weekend')
+print('"I hope it" is sunny this weekend')
+print('I hope it is sunny')
+print('hello world')
