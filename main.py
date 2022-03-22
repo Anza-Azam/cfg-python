@@ -15,5 +15,6 @@
 #
 # # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
-food = 'spaghetti'
-print(food)
+cats=10
+cans=8
+print(cats*cans)
