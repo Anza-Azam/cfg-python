@@ -1,2 +1,3 @@
-import os
-print(os.getcwd())
+import random
+print(random.random)
+
