@@ -1,3 +1,5 @@
-import random
-print(random.random)
+for number in range(100):
+    output = 'o' * number
+print(output)
+
 
