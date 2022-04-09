@@ -1,9 +1,14 @@
-my_money = input('How much money do you have? ')
-boat_cost = 20 + 5
-if (int(my_money) > boat_cost):
-    print('You can afford the boat hire')
+year = input('Enter the year')
+
+if (int(year) >1799 and (int(year)< 1900)):
+    if(int(year)>1869 and int(year)<1880 ):
+        era='Seventies'
+    century= 'Nineteenth Century'
+
 else:
-    print('You cannot afford the board hire')
+ century='Twenteeth Century'
+print(century,era)
+
 
 
 
