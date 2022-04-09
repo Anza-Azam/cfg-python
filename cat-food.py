@@ -1,7 +1,9 @@
-raining = input('Enter if it is raining')
-if (raining=='y'):
-    print('you need an umbrella')
-else: print("you don't need an umbrella")
+my_money = input('How much money do you have? ')
+boat_cost = 20 + 5
+if (int(my_money) > boat_cost):
+    print('You can afford the boat hire')
+else:
+    print('You cannot afford the board hire')
 
 
 
