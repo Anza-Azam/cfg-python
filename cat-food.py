@@ -1,13 +1,9 @@
-year = input('Enter the year')
+costs = [1,2,3]
+b=0
+for a in costs:
+    b+=a
+print(b)
 
-if (int(year) >1799 and (int(year)< 1900)):
-    if(int(year)>1869 and int(year)<1880 ):
-        era='Seventies'
-    century= 'Nineteenth Century'
-
-else:
- century='Twenteeth Century'
-print(century,era)
 
 
 
