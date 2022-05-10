@@ -1,12 +1,12 @@
 import random
 import requests
-import time
 from termcolor import colored
+import time
 
 your_name = input('What is your name?')
 names = ['Emma', 'Anza', 'Jess']
 computer_name = random.choice(names)
-print("You are playing {}".format(computer_name))
+print("You are playing {} in pokemon top trumps!!".format(computer_name))
 print()
 player_score = 0
 computer_score = 0
@@ -43,18 +43,19 @@ def game():
     global player_score, computer_score
     player1 = player_pokemon()
     player2 = computer_pokemon()
-    print("{} 'picks {}".format(your_name, player1['name']))
-
+    print("{} picks {}".format(your_name, player1['name']))
     print("Pokemon id=", player1['id'])
-    time.sleep(0.3)
+    time.sleep(0.5)
     print("Height=", player1['height'])
-    time.sleep(0.3)
+    time.sleep(0.5)
     print("Weight=", player1['weight'])
     stat_choice = input('Which stat do you want to use? (id, height, weight) ')
     print()
     print("Your opponent {} picks {}".format(computer_name, player2['name']))
     print(stat_choice, "=", player2[stat_choice])
     print()
+    my_stat = player1[stat_choice]
+    opponent_stat = player2[stat_choice]
 
     if player1[stat_choice] > player2[stat_choice]:
         print(colored("You win", 'green'))
@@ -72,11 +73,13 @@ no_of_games = 0
 while no_of_games < 3:
     game()
     no_of_games = no_of_games + 1
-    print(colored("Round {} of 3" .format(no_of_games),'yellow'))
+    print()
+    print(colored("Round {} of 3".format(no_of_games), 'yellow'))
     print(colored("{}'s score is: {}".format(your_name, player_score), 'blue'))
     print(colored("{}'s score is: {}".format(computer_name, computer_score), 'blue'))
     print()
     print()
+
 if player_score > computer_score:
     print(colored("Congratulations {}!!!, you have won!".format(your_name), 'green'))
 elif player_score < computer_score:
